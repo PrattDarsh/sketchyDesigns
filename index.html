@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Sketchy Designs</title>
     <style type="text/tailwindcss">
         @theme {
           --color-sketchygrey: #333433;
           --color-sketchyLightGrey: #3A3A3A;
 
+        }
+
+        body{
+            font-family: "Outfit", sans-serif;
         }
 
         @font-face {
@@ -50,7 +57,7 @@
     <div class=" mx-2 md:mx-0 fixed top-0 left-0 w-full z-40">
     <div class="bg-white shadow-m px-4 md:px-12 py-4 max-w-6xl mx-auto my-4 rounded-2xl border-4 border-gray-200">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <img src="images/Logo.svg" alt="Logo" class="">
+            <img src="images/Logo.svg" alt="Logo" class="h-8 md:h-12">
             <div class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
                     onclick="showMenu()" viewBox="0 0 256 256">
                     <path
@@ -78,7 +85,7 @@
     </div>
     <section class="h-screen max-w-6xl mx-auto py-32 transition hover:-rotate-2 ">
 
-        <div class="w-full h-full bg-purple-50 rounded-3xl shadow-lg relative">
+        <div class="w-full h-full bg-purple-50 rounded-3xl shadow-lg relative px-4 md:px-0">
             <div class="hidden md:absolute left-12 top-32">
                 <img src="images/toolkit.svg" alt="">
             </div>
@@ -219,7 +226,7 @@
 
     <section class="py-32 max-w-6xl mx-auto space-y-12  lufga_regular" id="deliverables">
         <div class="top_half space-y-2">
-            <div class="md:flex space-x-2 items-center justify-center">
+            <div class="md:flex space-x-2 space-y-2 md:space-y-0 items-center justify-center ">
                 <div
                     class="rounded-full px-16 py-6 border-3 border-purple-500  transition duration-300 transform hover:scale-105 hover:translate-y-1">
                     <p class="text-xl text-purple-500">Websites</p>
@@ -229,7 +236,7 @@
                     <p class="text-xl">Mobile Apps</p>
                 </div>
             </div>
-            <div class="md:flex space-x-2 items-center justify-center">
+            <div class="md:flex space-x-2 space-y-2 md:space-y-0 items-center justify-center">
                 <div
                     class="rounded-full px-16 py-6 border-3 border-purple-500  transition duration-300 transform hover:scale-105 hover:translate-y-1">
                     <p class="text-xl text-purple-500">Logos & Branding</p>
@@ -247,7 +254,7 @@
                     <p class="text-xl text-white">Wireframes</p>
                 </div>
             </div>
-            <div class="md:flex space-x-2 items-center justify-center">
+            <div class="md:flex space-x-2 space-y-2 md:space-y-0 items-center justify-center">
                 <div
                     class="rounded-full px-16 py-6 bg-purple-500  transition duration-300 transform hover:scale-105 hover:translate-y-1">
                     <p class="text-xl text-white">Social Media Ideation</p>
@@ -263,7 +270,7 @@
             </div>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="md:flex items-center justify-center">
             <div class="max-w-md">
                 <p class="text-4xl lufga">Apps, Websites, Pitch Decks and more..</p>
                 <svg class="h-6 float-right mr-32 mt-6 transform -rotate-5" viewBox="0 0 273 64"
@@ -277,7 +284,7 @@
         </div>
 
         <div class="bottom_half space-y-2">
-            <div class="md:flex space-x-2 items-center justify-center">
+            <div class="md:flex space-x-2 space-y-2 md:space-y-0 items-center justify-center">
                 <div
                     class="rounded-full px-16 py-6 border-3 border-purple-500  transition duration-300 transform hover:scale-105 hover:translate-y-1">
                     <p class="text-xl text-purple-500">Email Graphics</p>
@@ -295,7 +302,7 @@
                     <p class="text-xl">Social Media Graphics</p>
                 </div>
             </div>
-            <div class="md:flex space-x-2 items-center justify-center">
+            <div class="md:flex space-x-2 space-y-2 md:space-y-0 items-center justify-center">
                 <div
                     class="rounded-full px-16 py-6 border-3 border-purple-500  transition duration-300 transform hover:scale-105 hover:translate-y-1">
                     <p class="text-xl text-purple-500">Blog Graphics</p>
@@ -313,7 +320,7 @@
                     <p class="text-xl text-white">Billboards</p>
                 </div>
             </div>
-            <div class="md:flex space-x-2 items-center justify-center">
+            <div class="md:flex space-x-2 space-y-2 md:space-y-0 items-center justify-center">
                 <div
                     class="rounded-full px-16 py-6 bg-purple-500  transition duration-300 transform hover:scale-105 hover:translate-y-1">
                     <p class="text-xl text-white">Infographics</p>
@@ -384,7 +391,7 @@
         </div>
     </section>
 
-    <section class="bg-purple-100 rounded-3xl my-32 mx-12  ">
+    <section class="bg-purple-100 rounded-3xl my-32 mx-4 md:mx-12  ">
         <div class="flex space-x-6 px-6 py-8">
             <div class=" w-8 h-8 bg-white rounded-full"></div>
             <div class=" w-8 h-8 bg-white rounded-full"></div>
@@ -425,7 +432,7 @@
             <div class="md:flex items-center justify-center space-x-12 w-full py-32">
                 <img src="images/RealNutriCo Logo.svg" class="h-18" alt="">
                 <div class="w-1 p-0.5 h-24 bg-purple-600 hidden md:block"></div>
-                <p class="text-xl md:text-3xl max-w-xl lufga_regular mt-2">Websites that load fast, look sharp, and sell
+                <p class="text-xl md:text-3xl max-w-xl lufga_regular mt-6">Websites that load fast, look sharp, and sell
                     without
                     screaming.
                     Like Apple, but with your flavor.</p>
@@ -438,85 +445,111 @@
     </section>
 
 
-    <section class="py-16 " id="contact">
-        <h2 class="text-4xl lufga text-center md:text-5xl Text-bright">Get in touch</h2>
-        <svg class="h-4 mx-auto mt-2" viewBox="0 0 273 64" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M117.287 38.5286C111.994 38.7894 106.671 38.8618 101.392 39.3544C78.9596 41.4262 56.527 43.6429 34.0943 45.7582C32.0056 45.961 29.8882 45.903 27.7851 45.8016C20.5746 45.4684 17.9994 41.9188 19.8593 34.9935C20.174 33.82 20.4602 32.6176 20.8751 30.9514C24.3945 30.5458 27.9997 30.2415 31.5764 29.6765C34.9813 29.1404 38.3005 28.0683 41.7197 27.6771C44.8672 27.3149 48.0861 27.7061 51.2479 27.5033C53.7515 27.3439 56.2695 26.9962 58.7016 26.4022C63.0651 25.3591 67.3713 24.0842 71.7205 22.9251C72.3643 22.7513 73.4802 22.4615 73.6662 22.7368C76.6277 26.9528 78.0584 23.2584 79.9754 22.3022C103.066 20.7809 125.756 15.855 148.704 12.8705C130.606 13.6818 112.48 14.073 94.4107 15.4204C67.7576 17.4197 41.1475 20.1144 14.5086 22.5049C12.0765 22.7223 9.64444 22.9396 7.19802 23.0121C2.86314 23.128 -0.0840126 18.8685 0.00182675 13.1168C0.0733595 7.9011 3.29232 8.69797 6.86895 8.62553C16.6546 8.40821 26.426 7.72727 36.1974 7.07531C45.3536 6.46682 54.5098 5.68443 63.666 4.96004C78.4017 3.801 93.1089 2.36671 107.873 1.5409C116.514 1.0628 125.227 1.51189 133.897 1.59882C140.564 1.67126 147.159 -0.16873 153.955 2.03344C156.816 2.96067 160.507 0.874439 163.84 0.801999C177.818 0.526728 191.795 0.396382 205.773 0.396382C213.699 0.396382 221.61 0.932373 229.536 0.874421C241.096 0.787493 252.656 0.584711 264.201 0.019681C268.836 -0.212126 272.27 1.59886 272.928 5.71344C273.4 8.65449 271.44 12.0302 270.338 15.1451C270.167 15.6377 268.822 15.9129 268.021 15.9274C249.537 16.1158 230.995 15.4203 212.583 16.6373C191.524 18.0137 170.579 21.0706 149.591 23.4322C147.717 23.6495 145.886 24.2 144.04 24.5912C144.054 25.0548 144.083 25.5185 144.097 25.9966C152.195 25.9966 160.292 25.8082 168.39 26.0545C176.03 26.2863 183.669 27.1556 191.309 27.4309C196.96 27.6337 202.64 27.5613 208.277 27.1556C213.498 26.7934 216.846 29.691 217.261 35.689C217.562 40.0064 215.158 42.2666 210.222 42.6722C189.678 44.4108 169.134 46.1927 148.604 48.0327C146.773 48.1921 144.984 48.8151 143.139 49.7134C158.762 52.0459 174.728 52.553 189.206 59.5072L189.478 61.6369C187.317 62.4627 185.129 64.0564 183.011 63.9985C169.091 63.5493 155.199 62.7091 141.279 62.0426C125.527 61.2748 109.79 60.5938 94.0388 59.7825C91.807 59.6666 89.6181 59.0291 87.3862 58.6959C80.4905 57.6818 79.5605 53.5382 81.7208 45.7002C81.9783 44.744 83.2087 43.4546 84.0814 43.3676C90.1474 42.7736 96.428 41.3538 102.265 42.3825C108.059 43.3966 112.551 41.716 117.43 40.0209C117.373 39.5138 117.33 39.0213 117.273 38.5142L117.287 38.5286Z"
-                fill="indigo" />
-        </svg>
-        <div class="grid max-w-4xl gap-12 px-6 pt-8 mx-auto md:grid-cols-3 md:px-12 lg:px-0">
-            <div class="p-8 mx-auto">
-                <div class="">
-                    <a href="tel:+919449358959"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="text-gray-300 transition duration-100 ease-in-out transform fill-current w-28 h-28 hover:text-purple-500 hover:border-transparent hover:-translate-y-1 hover:scale-110"
-                            viewBox="0 0 24 24">
+    <section class="py-16 px-4 max-w-6xl mx-auto md:flex justify-center space-x-12" id="contact">
+        <div class="max-w-sm py-12">
+            <h2 class="text-4xl lufga">Let’s bring your vision to life!</h2>
+            <p class="mt-4">Whether you need bold designs, clever marketing, or a full brand makeover—we’re ready to
+                help you stand
+                out.</p>
+
+            <div class="mt-6 flex flex-wrap space-y-2">
+                <a href="mailto:hello@sketchydesigns.in">
+                    <div
+                        class="group p-4 border-2 border-gray-200 rounded-2xl flex space-x-4 items-center hover:bg-purple-500 hover:text-white transition duration-300 transform hover:-rotate-2">
+                        <svg xmlns=" http://www.w3.org/2000/svg"
+                            class="h-8 fill-current text-purple-500 group-hover:text-white  transition duration-300"
+                            viewBox="0 0 256 256">
                             <path
-                                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" />
-                        </svg></a>
-                </div>
-            </div>
-            <div class="p-8 mx-auto">
-                <div class="">
-                    <a href="mailto:hello@sketchydesigns.in"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="text-gray-300 transition duration-100 ease-in-out transform fill-current w-28 h-28 hover:text-purple-500 hover:border-transparent hover:-translate-y-1 hover:scale-110"
-                            viewBox="0 0 24 24">
+                                d="M228.44,89.34l-96-64a8,8,0,0,0-8.88,0l-96,64A8,8,0,0,0,24,96V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A8,8,0,0,0,228.44,89.34ZM96.72,152,40,192V111.53Zm16.37,8h29.82l56.63,40H56.46Zm46.19-8L216,111.53V192Z">
+                            </path>
+                        </svg>
+                        <p class="text-xl">hello@sketchydesigns.in</p>
+                    </div>
+                </a>
+                <a href="tel:+919986021992" class="">
+                    <div
+                        class="group p-4 border-2 border-gray-200 rounded-2xl flex space-x-4 items-center hover:bg-purple-500 hover:text-white transition duration-300 transform hover:-rotate-2">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 fill-current text-purple-500 group-hover:text-white  transition duration-300"
+                            viewBox="0 0 256 256">
                             <path
-                                d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z" />
-                        </svg></a>
-                </div>
-            </div>
-            <div class="p-8 mx-auto">
-                <div class="">
-                    <a href="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                            class="text-gray-300 transition duration-100 ease-in-out transform fill-current w-28 h-28 hover:text-purple-500 hover:border-transparent hover:-translate-y-1 hover:scale-110"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
-                        </svg></a>
-                </div>
+                                d="M144.27,45.93a8,8,0,0,1,9.8-5.66,86.22,86.22,0,0,1,61.66,61.66,8,8,0,0,1-5.66,9.8A8.23,8.23,0,0,1,208,112a8,8,0,0,1-7.73-5.93,70.35,70.35,0,0,0-50.33-50.34A8,8,0,0,1,144.27,45.93Zm-2.33,41.8c13.79,3.68,22.65,12.55,26.33,26.34A8,8,0,0,0,176,120a8.23,8.23,0,0,0,2.07-.27,8,8,0,0,0,5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8,8,0,1,0-4.13,15.46Zm72.43,78.73-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L126.87,168c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L89.54,41.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,24,88c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,214.37,166.46Z">
+                            </path>
+                        </svg>
+                        <p class="text-xl">:+91 99860 21992</p>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <form name="interest-form" method="POST" netlify>
-            <label>
-                Name:
-                <input type="text" name="name" required>
-            </label><br><br>
+        <div class="bg-purple-100 rounded-3xl ">
+            <div class="flex space-x-6 px-6 py-8">
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+                <div class=" w-8 h-8 bg-white rounded-full"></div>
+            </div>
+            <form name="interest-form" method="POST" class="space-y-6 px-8 pt-6 pb-12" netlify>
+                <div class="space-y-2">
+                    <p class="lufga">Name</p>
+                    <input type="text"
+                        class="bg-white py-2 px-4 rounded-3xl w-full focus:outline-2 focus:outline-purple-500"
+                        name="name" required>
+                </div>
 
-            <label>
-                Company:
-                <input type="text" name="company" required>
-            </label><br><br>
+                <div class="space-y-2">
+                    <p class="lufga">Company</p>
+                    <input type="text"
+                        class="bg-white py-2 px-4 rounded-3xl w-full focus:outline-2 focus:outline-purple-500"
+                        name="company" required>
+                </div>
 
-            <p>Select your interests:</p>
-            <label><input type="checkbox" name="interests" value="Option 1"> Option 1</label><br>
-            <label><input type="checkbox" name="interests" value="Option 2"> Option 2</label><br>
-            <label><input type="checkbox" name="interests" value="Option 3"> Option 3</label><br>
-            <label><input type="checkbox" name="interests" value="Option 4"> Option 4</label><br>
-            <label><input type="checkbox" name="interests" value="Option 5"> Option 5</label><br>
-            <label><input type="checkbox" name="interests" value="Option 6"> Option 6</label><br>
-            <label><input type="checkbox" name="interests" value="Option 7"> Option 7</label><br>
-            <label><input type="checkbox" name="interests" value="Option 8"> Option 8</label><br>
-            <label><input type="checkbox" name="interests" value="Option 9"> Option 9</label><br>
-            <label><input type="checkbox" name="interests" value="Option 10"> Option 10</label><br>
-            <label>
-                <input type="checkbox" id="option-other" name="interests" value="Other" onchange="toggleOtherComment()">
-                Other
-            </label>
 
-            <div id="other-comment-box">
-                <label>
-                    Please specify:
-                    <textarea name="other-comments" rows="4" cols="50"></textarea>
-                </label>
-            </div><br>
+                <p class="lufga">Select your interests:</p>
+                <div class="grid md:grid-cols-2">
+                    <div class="">
+                        <label><input type="checkbox" name="interests" value="Option 1"> Web design</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 2"> Logo and branding</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 3"> Design system</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 4"> Wireframes</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 5"> Social media</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 6"> Slide-decks</label><br>
+                    </div>
+                    <div class="">
+                        <label><input type="checkbox" name="interests" value="Option 7"> Blogs</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 8"> Digital Ads</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 9"> Infographics</label><br>
+                        <label><input type="checkbox" name="interests" value="Option 10"> Brochures</label><br>
+                        <label>
+                            <input type="checkbox" id="option-other" name="interests" value="Other"
+                                onchange="toggleOtherComment()">
+                            Other
+                        </label>
+                    </div>
+                </div>
 
-            <!-- Required hidden input for Netlify -->
-            <input type="hidden" name="form-name" value="interest-form">
+                <div id="other-comment-box" class="space-y-2">
+                    <p class="lufga"> Message (Optional)</p>
+                    <textarea name="other-comments"
+                        class="bg-white py-2 px-4 rounded-2xl w-full focus:outline-2 focus:outline-purple-500" rows="4"
+                        cols="50"></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
+                </div>
+
+                <!-- Required hidden input for Netlify -->
+                <input type="hidden" name="form-name" value="interest-form">
+
+                <button type="submit"
+                    class="w-full text-center bg-purple-500 py-4 rounded-2xl text-white text-xl hover:bg-purple-700 transition duration-300 cursor-pointer">Submit</button>
+            </form>
+        </div>
     </section>
 
     <div class="bg-sketchygrey py-6 text-center text-xl text-gray-400 ">
