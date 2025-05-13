@@ -477,6 +477,46 @@
                 </div>
             </div>
         </div>
+
+        <form name="interest-form" method="POST" netlify>
+            <label>
+                Name:
+                <input type="text" name="name" required>
+            </label><br><br>
+
+            <label>
+                Company:
+                <input type="text" name="company" required>
+            </label><br><br>
+
+            <p>Select your interests:</p>
+            <label><input type="checkbox" name="interests" value="Option 1"> Option 1</label><br>
+            <label><input type="checkbox" name="interests" value="Option 2"> Option 2</label><br>
+            <label><input type="checkbox" name="interests" value="Option 3"> Option 3</label><br>
+            <label><input type="checkbox" name="interests" value="Option 4"> Option 4</label><br>
+            <label><input type="checkbox" name="interests" value="Option 5"> Option 5</label><br>
+            <label><input type="checkbox" name="interests" value="Option 6"> Option 6</label><br>
+            <label><input type="checkbox" name="interests" value="Option 7"> Option 7</label><br>
+            <label><input type="checkbox" name="interests" value="Option 8"> Option 8</label><br>
+            <label><input type="checkbox" name="interests" value="Option 9"> Option 9</label><br>
+            <label><input type="checkbox" name="interests" value="Option 10"> Option 10</label><br>
+            <label>
+                <input type="checkbox" id="option-other" name="interests" value="Other" onchange="toggleOtherComment()">
+                Other
+            </label>
+
+            <div id="other-comment-box">
+                <label>
+                    Please specify:
+                    <textarea name="other-comments" rows="4" cols="50"></textarea>
+                </label>
+            </div><br>
+
+            <!-- Required hidden input for Netlify -->
+            <input type="hidden" name="form-name" value="interest-form">
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <div class="bg-sketchygrey py-6 text-center text-xl text-gray-400 ">
